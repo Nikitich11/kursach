@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Poor+Story&display=swap');
+
+body {
+font-family: 'Nanum Gothic', sans-serif;
+margin: 0;
+min-height: 100vh;
+justify-content: center;
+
+}
+
+.container-word-all {
+  z-index: 10;
+  backdrop-filter: blur(5px);
+}
+
+.first {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.first-video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 95%;
+  object-fit: cover;
+}
+
+.header {
+  max-width: 1197px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 15px 110px 15px;
+  }
+  
+  .header-logo {
+    display: block;
+    width: 150px;
+    height: 25px;
+    background-image: url(/Forweb/icons8-wix.svg);
+    background-repeat: no-repeat;
+  }
+  
+  .form {
+      position: relative;
+  }
+  
+  .form-button {
+      display: block;
+      width: 20px;
+      height: 20px;
+      background-image: url(/Forweb/search.png);
+      background-repeat: no-repeat;
+      background-color: transparent;
+      border: none;
+      position: absolute;
+      top: calc(50% - 10px);
+      left: 10px;
+  }
+  
+  .form-input {
+      width: 387px;
+      background: rgba(255, 255, 255, 0.1);
+      border: none;
+      border-radius: 10px;
+      padding: 10px 40px;
+      color: rgb(255, 255, 255);
+  }
+  
+  .header-list {
+  margin-top: 0px;
+  display: flex;
+  list-style-type: none;
+  gap: 40px;
+  }
+  
+  .header-link {
+    border-radius: 10px;
+      padding: 10px 10px;
+      background-color: #00000088;
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+  }
+  
+  .header-link:hover {
+    transition: 0.3s;
+    background-color: #ffffff5b;
+  }
+
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    position: relative;
+    z-index: 10;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  nav ul li:hover > a {
+    background-color: #0000002d;
+    border-radius: 10px;
+  }
+  
+  nav ul li:hover .submenu {
+    display: block;
+  }
+  
+  nav .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #0000007c;
+    padding: 0;
+  }
+  
+  nav .submenu li {
+    display: block;
+  }
+  
+  .header-ling-phon {
+  border-radius: 10px;
+  padding: 10px 20px;
+  }
+
+.product {
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fill, 225px);
+    justify-content: center;
+    justify-items: center;
+    column-gap: 30px; 
+    row-gap: 40px;
+    margin-top: 20px;
+}
+
+.product2 {
+  flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fill, 225px);
+    justify-content: center;
+    justify-items: center;
+    column-gap: 30px; 
+    row-gap: 40px;
+    margin-top: 20px;
+}
+
+.card {
+    align-items: center;
+    width: 15%;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    border-radius: 20px;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Nanum Gothic', sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+.card::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    transform: skewY(345deg);
+    position: absolute;
+    top: -50%;
+    transition: 0.7s;
+}
+
+.card:hover::before {
+    transform: skewY(390deg); 
+    top: -70%;
+}
+
+.card-img {
+margin-top: 20px;
+width: 100%;
+position: relative;
+transition: 0.7s;
+font-family: 'Nanum Gothic', sans-serif;
+}
+
+.card:hover .card-img {
+    width: 70%;
+}
+
+.card-name {
+    font-weight: 1000;
+    font-size: 20px;
+    margin: 0 0 10px;
+    font-family: 'Nanum Gothic', sans-serif;
+    position: relative;
+}
+
+.Description { 
+  font-weight: 600;
+  font-size: 15px;
+  margin-top: 2px;
+  font-family: 'Cinzel', serif;
+}
+
+.card-price {
+    font-size: 25px;
+    margin: 0px 0 30px;
+    position: relative;
+}
+
+.card-currency {
+font-size: 18px;
+font-family: 'Nanum Gothic', sans-serif;
+}
+
+.card-btn {
+    margin-left: 0px;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    background-color: #000000;
+    padding: 10px 40px ;
+    border-radius: 10px;
+    color: inherit;
+    text-transform: inherit;
+    font-weight: 1000;
+    font-family: 'Nanum Gothic', sans-serif;
+    position: relative;
+    transition: 0.7s;
+    top: 140px;
+}
+
+.card-btn:hover {
+background-color: #00000091;
+font-family: 'Nanum Gothic', sans-serif;
+color: white;
+}
+
+.card:hover .card-btn {
+top: -27px;
+color: white;
+}
+
+.futer-container-all {
+    margin-top: -400px;
+}
+
+  footer {
+    
+    background-color: #1a1a1a;
+    padding: 20px 0;
+    color: #ffffff;
+    font-size: 14px;    
+    margin-top: 560px;
+    position: relative;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+  .col-md-6 {
+    width: 50%;
+  }
+  
+  p {
+    margin: 0;
+    
+  }
+  
+  ul.footer-menu {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+  }
+  
+  .footer-menu li {
+    display: inline;
+    margin-right: 10px;
+    
+  }
+  
+  .footer-menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .footer-menu li a:hover {
+    text-decoration: underline;
+    
+  }

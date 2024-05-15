@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+
+
+body {
+font-family: 'Nanum Gothic', sans-serif;
+background-color: #000000;
+margin: 0;
+}
+
+.container-word-all {
+    z-index: 10;
+    backdrop-filter: blur(5px);
+}
+
+.first {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+.first-video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header {
+  max-width: 1197px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 15px 110px 15px;
+  }
+  
+  .header-logo {
+    display: block;
+    width: 150px;
+    height: 25px;
+    background-image: url(/Forweb/icons8-wix.svg);
+    background-repeat: no-repeat;
+  }
+  
+  .form {
+      position: relative;
+  }
+  
+  .form-button {
+      display: block;
+      width: 20px;
+      height: 20px;
+      background-image: url(/Forweb/search.png);
+      background-repeat: no-repeat;
+      background-color: transparent;
+      border: none;
+      position: absolute;
+      top: calc(50% - 10px);
+      left: 10px;
+  }
+  
+  .form-input {
+      width: 387px;
+      background: rgba(255, 255, 255, 0.1);
+      border: none;
+      border-radius: 10px;
+      padding: 10px 40px;
+      color: white;
+  }
+  
+  .header-list {
+    margin-top: 0px;
+  display: flex;
+  list-style-type: none;
+  gap: 40px;
+  }
+  
+  .header-link {
+    border-radius: 10px;
+      padding: 10px 10px;
+      background-color: #a0a0a0ef;
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+  }
+  
+  .header-link:hover {
+    transition: 0.3s;
+    background-color: #0000004f;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    position: relative;
+    z-index: 10;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #f8f8f8;
+  }
+  
+  nav ul li:hover > a {
+    background-color: #ffffff88;
+    border-radius: 10px;
+  }
+  
+  nav ul li:hover .submenu {
+    display: block;
+  }
+  
+  nav .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff77;
+    padding: 0;
+  }
+  
+  nav .submenu li {
+    display: block;
+  }
+
+  .header-ling-phon {
+  border-radius: 10px;
+  padding: 10px 20px;
+  }
+
+
+.faq {
+    max-width: 700px;
+    margin: 0px auto;
+}
+  
+.faq-item {
+    margin-bottom: 40px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.faq-title {
+    padding: 10px 15px;
+    display: block;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.faq-title:hover {
+    background-color: rgba(255, 0, 0, 0.356);
+    transition: 0.3s;
+}
+
+.faq-input {
+ -webkit-appearance: none;
+position: absolute;
+}
+
+.faq-input:checked ~ .faq-title {
+    background-color: rgba(255, 0, 0, 0.616);
+}
+
+.faq-input:checked ~ .faq-text {
+display: block;
+}
+
+.faq-text {
+    display: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.container-all {
+    position: static;
+    margin-top: -200px;
+}
+
+  footer {
+    position: relative;
+    background-color: #1a1a1a;
+    padding: 10px 650px;
+    color: #ffffff;
+    font-size: 14px;    
+    margin-top: 260px;
+  }
+  
+  .container {
+    position: relative;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+  .col-md-6 {
+    text-align: center;
+    width: 50%;
+  }
+  
+  p {
+    margin: 0;
+    
+  }
+  
+  ul.footer-menu {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    
+  }
+  
+  .footer-menu li {
+    display: inline;
+    margin-right: 10px;
+    
+  }
+  
+  .footer-menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    
+  }
+  
+  .footer-menu li a:hover {
+    text-decoration: underline;
+    
+  }

@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+body {
+font-family: 'Nanum Gothic', sans-serif;
+background-color: #000000;
+background-size: cover;
+background-position: center;
+}
+
+.container-word-all {
+    z-index: 10;
+    
+}
+
+.first {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+.first-video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header {
+    z-index: 2;
+    max-width: 1197px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px 900px 15px;
+    }
+
+.header-logo {
+  display: block;
+  width: 129px;
+  height: 25px;
+  background-image: url(/Forweb/icons8-wix.svg);
+  background-repeat: no-repeat;
+}
+
+.form {
+    position: relative;
+}
+
+.form-button {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url(/Forweb/search.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: calc(50% - 10px);
+    left: 10px;
+}
+
+.form-input {
+    width: 387px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 40px;
+    color: white;
+}
+
+.header-list {
+display: flex;
+list-style-type: none;
+gap: 40px;
+}
+
+.header-link {
+    border-radius: 10px;
+    padding: 10px 10px;
+    background-color: #e2e2e2ab;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.header-link:hover {
+    transition: 0.3s;
+    background-color: #ffffff60;
+  }
+
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    position: relative;
+    z-index: 10;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  nav ul li:hover > a {
+    background-color: #ccc;
+    border-radius: 10px;
+  }
+  
+  nav ul li:hover .submenu {
+    display: block;
+  }
+  
+  nav .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #d1d1d1c5;
+    padding: 0;
+  }
+  
+  nav .submenu li {
+    display: block;
+  }
+
+.header-ling-phon {
+background-color: #e2e2e2ab;
+border-radius: 10px;
+padding: 10px 20px;
+}
+
+.header-ling-phon:hover {
+    transition: 0.3s;
+    background-color: #ffffff60;
+}
+
+.container {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper {
+position: static;
+    margin-top: -1000px;
+    background: transparent;
+    border-radius: 10px;
+    width: 420px;
+   border: 2px solid rgba(255, 255, 255, 0.2);
+   backdrop-filter: blur(20px);
+   box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #000000;
+    padding: 30px 40px;
+}
+
+.wrapper h1 {
+    font-weight: 600;
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.842);
+    border-radius: 20px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    padding: 20px 45px 20px 20px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.input-box input::placeholder {
+    color: #ffffff;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+
+}
+
+ .wrapper .remember-forgot {
+display: flex;
+justify-content: space-between;
+font-size: 14px;
+margin: -15px 0 15px;
+}
+
+.remember-forgot label {
+    color: rgb(255, 255, 255);
+}
+
+.remember-forgot label input {
+    accent-color: white;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+color: rgb(255, 255, 255);
+text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 16px;
+    color: #3a3a3ae0;
+    font-weight: 600;
+}
+
+.wrapper .register-link {
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p {
+    color: white;
+}
+
+.register-link p a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover{
+    text-decoration: underline;
+
+}
